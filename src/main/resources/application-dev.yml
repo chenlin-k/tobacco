@@ -1,0 +1,19 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:db2://localhost:50002/dbods?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: xxx
+    password: xxx
+    driver-class-name: com.ibm.db2.jcc.DB2Driver
+    max-active: 20
+    initial-size: 1
+    min-idle: 3
+    max-wait: 60000
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    validation-query: SELECT 'x'
+    test-while-idle: true
+    test-on-borrow: false
+    test-on-return: false

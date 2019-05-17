@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.junfeng.tobacco.mapper.AllTableMapper">
+
+    <select id="selectAllTableName" resultType="java.util.List">
+        select tabname from syscat.tables where tabschema = current schema;
+    </select>
+
+</mapper>
+
